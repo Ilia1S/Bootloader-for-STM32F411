@@ -1,9 +1,9 @@
-Russian note
+Bootloader for STM32F411
 
-Программа выполняет следующие действия:
-1) Чтение строк HEX файла. Для примера используется 5 строк с разнообразными данными.
-2) Проверка корректности CRC кода считанной строки, анализ структуры записи HEX файла и запись данных во flash память микроконтроллера. Вывод данных через UART.
-Также аппаратно выполнена схема защиты микроконтроллера от переполюсовки и перенапряжения.
+The application does:
+1) Read a HEX file. For example we use 5 lines with various data.
+2) Check the CRC code validity of each line and analise the HEX file structure.
+3) Write the data to Flash.
+4) Output the data via UART.
 
-English note
-
+The protection circuit is also implemented in hardware.
